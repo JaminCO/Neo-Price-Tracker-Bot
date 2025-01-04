@@ -85,5 +85,5 @@ def main():
     application.run_polling()
 
 if __name__ == '__main__':
-    keep_alive()
+    # keep_alive()
     main()
