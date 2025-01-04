@@ -9,7 +9,7 @@ load_dotenv()
 
 # Replace with your bot's API key and channel ID
 API_KEY = os.getenv('API_KEY')
-CHANNEL_ID = int(os.getenv('CHANNEL_ID'))  # Replace with your channel's ID
+CHANNEL_ID = -1002383693276 # Replace with your channel's ID
 BOT_CREATOR_ID = int(os.getenv('BOT_CREATOR_ID'))  # Replace with your Telegram ID
 
 
