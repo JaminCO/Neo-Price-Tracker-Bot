@@ -9,8 +9,8 @@ load_dotenv()
 
 # Replace with your bot's API key and channel ID
 API_KEY = os.getenv('API_KEY')
-CHANNEL_ID = os.getenv('CHANNEL_ID')  # Replace with your channel's ID
-BOT_CREATOR_ID = os.getenv('BOT_CREATOR_ID')  # Replace with your Telegram ID
+CHANNEL_ID = int(os.getenv('CHANNEL_ID'))  # Replace with your channel's ID
+BOT_CREATOR_ID = int(os.getenv('BOT_CREATOR_ID'))  # Replace with your Telegram ID
 
 
 # Function to check if the sender is the bot creator
