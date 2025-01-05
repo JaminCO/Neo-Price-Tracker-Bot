@@ -54,8 +54,7 @@ async def start_updates(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
         return
 
     await update.message.reply_text("Starting periodic updates to the channel.")
-    await send_update(context)
-    context.job_queue.run_repeating(send_update, interval=60, first=0)
+    context.job_queue.run_repeating(send_update, interval=120, first=0)
 
 # Command to stop sending updates
 async def stop_updates(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -85,5 +84,5 @@ def main():
     application.run_polling()
 
 if __name__ == '__main__':
-    keep_alive()
+    # keep_alive()
     main()
